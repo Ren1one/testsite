@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body id="body">
+    <div class="header">
+        <div class="container header__container">
+            <div class="header__row">
+                <div class="header__left">
+                    <img src="img/logo.svg" alt="Логотип" class="header__logo">
+                </div>
+
+                <hr>
+
+                <div class="header__right">
+                    <button aria-label="Кнопка меню" class="header__burger" id="burger">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#Reproductions" class="header__link link">Репродукции</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#new" class="header__link link">Новинки</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#about" class="header__link link">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__basket basket">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_671)">
+                                <path d="M9.24992 21.1667C9.75618 21.1667 10.1666 20.7563 10.1666 20.25C10.1666 19.7438 9.75618 19.3334 9.24992 19.3334C8.74366 19.3334 8.33325 19.7438 8.33325 20.25C8.33325 20.7563 8.74366 21.1667 9.24992 21.1667Z" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.3334 21.1667C19.8397 21.1667 20.2501 20.7563 20.2501 20.25C20.2501 19.7438 19.8397 19.3334 19.3334 19.3334C18.8272 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8272 21.1667 19.3334 21.1667Z" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.91675 1.91663H5.58341L8.04008 14.1908C8.12391 14.6128 8.3535 14.9919 8.68866 15.2617C9.02383 15.5315 9.44322 15.6749 9.87341 15.6666H18.7834C19.2136 15.6749 19.633 15.5315 19.9682 15.2617C20.3033 14.9919 20.5329 14.6128 20.6167 14.1908L22.0834 6.49996H6.50008" stroke="#2C2D35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_671">
+                                    <rect width="22" height="22" fill="white" transform="translate(1 1)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="intro">
+        <div class="container intro__container">
+            <div class="intro__left">
+                <picture>
+                    <source srcset="img/intro_2.webp" media="(max-width:1000px)" type="image/webp">
+                    <img class="intro__img" src="img/intro.webp" alt="Изображение голубя">
+                </picture>
+            </div>
+            <div class="intro__right">
+                <h1 class="intro__title">Реплики картин от <strong>Ink. House</strong></h1>
+                <div class="intro__desc">
+                    Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
+                </div>
+                <a href="#" class="btn-main">Продукция</a>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="Reproductions">
+        <div class="container gallery__container">
+            <div class="gallery__top">
+                <h2 class="gallery__title">Репродукции</h2>
+                <div class="gallery__buttons">
+                    <a href="#Reproductions" class="btn-tab gallery__btn gallery__btn--active" data-tab="#tab_1">Франция</a>
+                    <a href="#Reproductions" class="btn-tab gallery__btn" data-tab="#tab_2">Германия</a>
+                    <a href="#Reproductions" class="btn-tab gallery__btn" data-tab="#tab_3">Англия</a>
+                </div>
+            </div>
+            <div class="gallery__cards">
+                <div class="gallery__tab gallery__tab--active" id="tab_1">
+                    <div class="card">
+                        <img src="img/tabs/tab1/card1.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Марсель Руссо</p>
+                        <h3 class="card__title">Охота Амура</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">14 500 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Анри Селин</p>
+                        <h3 class="card__title">Дама с собачкой</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">14 500 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Франсуа Дюпон</p>
+                        <h3 class="card__title">Процедура</h3>
+                        <p class="card__desc">Цветная литография (40х60) </p>
+                        <p class="card__price">20 000 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card4.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Луи Детуш</p>
+                        <h3 class="card__title">Роза</h3>
+                        <p class="card__desc">Бумага, акрил (50х80) </p>
+                        <p class="card__price">12 000 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card5.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Франсуа Дюпон</p>
+                        <h3 class="card__title">Птичья трапеза</h3>
+                        <p class="card__desc">Цветная литография (40х60) </p>
+                        <p class="card__price">22 500 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card6.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Пьер Моранж</p>
+                        <h3 class="card__title">Пейзаж с рыбой</h3>
+                        <p class="card__desc">Цветная литография (40х60) </p>
+                        <p class="card__price">20 000 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                </div>
+                <div class="gallery__tab" id="tab_2">
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="КартинаКартина" class="card__img">
+                        <p class="card__name">Таб 2</p>
+                        <h3 class="card__title">Таб 2</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">100 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="КартинаКартина" class="card__img">
+                        <p class="card__name">Таб 2</p>
+                        <h3 class="card__title">Таб 2</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">100 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="КартинаКартина" class="card__img">
+                        <p class="card__name">Таб 2</p>
+                        <h3 class="card__title">Таб 2</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">100 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="КартинаКартина" class="card__img">
+                        <p class="card__name">Таб 2</p>
+                        <h3 class="card__title">Таб 2</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">100 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="КартинаКартина" class="card__img">
+                        <p class="card__name">Таб 2</p>
+                        <h3 class="card__title">Таб 2</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">100 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card2.webp" alt="КартинаКартина" class="card__img">
+                        <p class="card__name">Таб 2</p>
+                        <h3 class="card__title">Таб 2</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">100 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                </div>
+                <div class="gallery__tab" id="tab_3">
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Таб 3</p>
+                        <h3 class="card__title">Таб 3</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">200 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Таб 3</p>
+                        <h3 class="card__title">Таб 3</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">200 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Таб 3</p>
+                        <h3 class="card__title">Таб 3</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">200 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Таб 3</p>
+                        <h3 class="card__title">Таб 3</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">200 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Таб 3</p>
+                        <h3 class="card__title">Таб 3</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">200 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/tabs/tab1/card3.webp" alt="Картина" class="card__img">
+                        <p class="card__name">Таб 3</p>
+                        <h3 class="card__title">Таб 3</h3>
+                        <p class="card__desc">Холст, масло (50х80) </p>
+                        <p class="card__price">200 руб</p>
+                        <a href="#" class="card__btn btn-main">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-products" id="new">
+        <div class="container new-products__container">
+            <div class="new-products__title-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
+                    <path d="M46.6407 21.9227L58.5227 11.1781L53.685 26.4498L52.9462 28.782L55.3599 28.3827L71.1646 25.7676L58.8384 35.9995L56.956 37.5621L59.2023 38.531L73.9119 44.8758L58.0107 46.8194L55.5823 47.1162L56.9482 49.1458L65.8925 62.436L51.4647 55.4741L49.2614 54.4109L49.3132 56.8568L49.6523 72.8729L41.2788 59.2159L40 57.1303L38.7212 59.2159L30.3477 72.8729L30.6868 56.8568L30.7386 54.4109L28.5353 55.4741L14.1075 62.436L23.0518 49.1458L24.4177 47.1162L21.9893 46.8194L6.08807 44.8758L20.7977 38.531L23.044 37.5621L21.1616 35.9995L8.83541 25.7676L24.6401 28.3827L27.0538 28.782L26.315 26.4498L21.4773 11.1781L33.3593 21.9227L35.1738 23.5636L35.8132 21.2022L40 5.73935L44.1868 21.2022L44.8262 23.5636L46.6407 21.9227Z" stroke="#EEDB6D" stroke-width="3"/>
+                </svg>
+                <h2 class="new-products__title">Новая коллекция <br>французских авторов</h2>
+            </div>
+            <p class="new-products__text">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+            <p class="new-products__text">Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
+            <a href="#" class="new-products__btn btn-second">Ознакомиться</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container about__container">
+            <div class="about__left">
+                <img class="about__img" src="img/about_picture.webp" alt="Изображение рамки картины">
+            </div>
+            <div class="about__right">
+                <h2 class="about__title">Наша команда</h2>
+                <p class="about__desc">
+                    Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.
+                </p>
+                <div class="about__team">
+                    <img src="img/team_1.webp" class="about__item" alt="Изображение команды">
+                    <img src="img/team_2.webp" class="about__item" alt="Изображение команды">
+                    <img src="img/team_3.webp" class="about__item" alt="Изображение команды">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <img src="img/logo.svg" alt="Логотип" class="footer__logo">
+            <ul class="list footer__number">
+                <li>+7 (999) 543-54-54</li>
+                <li>Мастерская</li>
+            </ul>
+            <ul class="list footer__rep">
+                <li>Репродукции</li>
+                <li><a href="#" class="link">Франция</a></li>
+                <li><a href="#" class="link">Германия</a></li>
+                <li><a href="#" class="link">Англия</a></li>
+            </ul>
+            <ul class="list footer__news">
+                <li>Новинки</li>
+                <li><a href="#" class="link">2020</a></li>
+                <li><a href="#" class="link">2021</a></li>
+            </ul>
+            <ul class="list footer__about">
+                <li>О нас</li>
+                <li><a href="#" class="link">Художники</a></li>
+                <li><a href="#" class="link">Менеджеры</a></li>
+            </ul>
+
+            <ul class="list footer__social">
+                <div class="footer__icons">
+                    <a href="#" class="footer__social-item social-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_10_915)">
+                                <path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z" fill="#2C2D35"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_10_915">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-item social-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_10_916)">
+                                <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="#2C2D35"/>
+                                </g>
+                            <defs>
+                                <clipPath id="clip0_10_916">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                            
+                    </a>
+                    <a href="#" class="footer__social-item social-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_10_919)">
+                                <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#2C2D35"/>
+                                </g>
+                            <defs>
+                                <clipPath id="clip0_10_919">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                            
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <p>Ink. House ®</з>
+                    <p>All rights reserved</p>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
